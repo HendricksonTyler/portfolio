@@ -246,7 +246,7 @@ nav a {
     background: -moz-linear-gradient(-45deg, #1d4d5b 0%, #406676 34%, #85959a 100%);
     background: -webkit-linear-gradient(-45deg, #1d4d5b 0%,#406676 34%,#85959a 100%);
     background: linear-gradient(135deg, #1d4d5b 0%,#406676 34%,#85959a 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4d5b', endColorstr='#85959a',GradientType=1 );;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d4d5b', endColorstr='#85959a',GradientType=1 );
 }
 
 #contact-button {
