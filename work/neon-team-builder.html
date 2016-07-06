@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+    <title>Tyler Hendrickson - Neon Team Builder</title>
+
+    <!-- Favicon & Web App-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=qAAPlkYKgJ">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png?v=qAAPlkYKgJ" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png?v=qAAPlkYKgJ" sizes="16x16">
+    <link rel="manifest" href="/manifest.json?v=qAAPlkYKgJ">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=qAAPlkYKgJ">
+    <link rel="shortcut icon" href="/favicon.ico?v=qAAPlkYKgJ">
+    <meta name="apple-mobile-web-app-title" content="Tyler H">
+    <meta name="application-name" content="Tyler H">
+    <meta name="theme-color" content="#406676">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<nav>
+    <div class="limit-width-small">
+        <a href="../index.html" class="nav-page">HOME</a>
+        <a href="../about.html" class="nav-page">ABOUT</a>
+        <a href="../index.html" class="nav-icon"><img src="../img/Logo.png" class="crisp" alt="Tyler Hendrickson logo"></a>
+        <a href="../work.html" class="nav-page nav-active">WORK</a>
+        <a href="../contact.html" class="nav-page">CONTACT</a>
+    </div>
+</nav>
+<main>
+    <div class="section top-section text-section detail-section">
+        <div class="limit-width">
+            <div class="split-container">
+                <h1>Neon Team Builder</h1>
+
+                <h3>Desktop App Development - 2013</h3>
+
+                <p>Neon Team Builder is a project I worked on while learning C# my senior year of high school. I developed this program as a tool for the competitive Pokémon community. Neon Team Builder analyzes a team of six Pokémon and gives a visual representation of that team's type advantages and weaknesses. This helps players construct a more balanced team.</p>
+            </div>
+            <div class="split-container">
+                <img src="../img/portfolio/neon-team-builder/Builder.png" alt="Program window showing various stats and information">
+            </div>
+        </div>
+    </div>
+    <div class="section text-section detail-section dark-section">
+        <div class="limit-width">
+            <img src="../img/portfolio/neon-team-builder/TeamBuilder.png" alt="Program window on a laptop showing various stats and information">
+
+            <h2>How It Works</h2>
+
+            <p>Neon Team Builder was built in Visual Studio as a Windows form application in C#. The data for all 649 Pokémon (plus alternate forms) are contained within a database spreadsheet. This data includes information such as stat values, types, and tiers. As you update the various fields in the application, the program then reads in the values for the Pokémon you selected according to its index number. Various functions are called at the same time that update the output. Basically, a lot of lines of code.</p>
+        </div>
+    </div>
+    <div class="section text-section detail-section">
+        <div class="limit-width">
+            <div class="split-container">
+                <h2>Type Analysis</h2>
+
+                <p>The main function of Neon Team Builder is type analysis. As you input your various Pokémon and abilities, your weaknesses and strengths will be shown in darker shades of red and green respectively. This lets you see at a glance which types you might struggle against and which types you will be effective against. It also takes into account abilities that affect the type resistances of your Pokémon.</p>
+            </div>
+            <div class="split-container">
+                <img src="../img/portfolio/neon-team-builder/Type.png" alt="Program window highlighting a section of info">
+            </div>
+
+        </div>
+    </div>
+    <div class="section text-section detail-section">
+        <div class="limit-width">
+            <div class="split-container float-r">
+                <h2>Stat Analysis</h2>
+
+                <p>In addition to type matchups, Neon Team Builder also gives you a readout of the stat totals of your selected team. By comparing these numbers, you can tell how balanced the stats of your team are and if you have any glaring weaknesses. You can also compare these numbers across different teams and see which looks better on paper according to stat totals.</p>
+            </div>
+            <div class="split-container">
+                <img src="../img/portfolio/neon-team-builder/Stat.png" alt="Program window highlighting a different section of info">
+            </div>
+        </div>
+    </div>
+    <div class="section text-section detail-section">
+        <div class="limit-width">
+            <div class="split-container">
+                <h2>Tier Placement</h2>
+
+                <p>In competitive Pokémon battling, different Pokémon are sometimes placed into different "tiers" according to how powerful the Pokémon generally ranks. Simply having one high tier Pokémon in your team will raise your whole team's tier level, thus making it harder for lower-tiered Pokémon to compete. Neon Team Builder also gives you a readout of this so you can easily see where your team is placed.</p>
+            </div>
+            <div class="split-container">
+                <img src="../img/portfolio/neon-team-builder/Tier.png" alt="Program window highlighting a different section of info">
+            </div>
+        </div>
+    </div>
+    <div class="section bottom-section text-section detail-section white-section bottom-section">
+        <div class="limit-width">
+            <h2>Demonstration</h2>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ubyZH_Wji-E" allowfullscreen></iframe>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="limit-width">
+        <div id="footer-copyright">
+            <p><b>&copy; 2016 Tyler Hendrickson</b> <em>| This website was coded from scratch using HTML, CSS, PHP, and JavaScript.</em></p>
+        </div>
+        <div id="footer-social">
+            <a href="http://www.facebook.com/tylerhendrickson28" target="_blank">
+                <div id="facebook" class="social">
+                    <img src="../img/social/Facebook.png" alt="Facebook icon">
+                </div>
+            </a>
+            <a href="http://www.twitter.com/thendrixon" target="_blank">
+                <div id="twitter" class="social">
+                    <img src="../img/social/Twitter.png" alt="Twitter icon">
+                </div>
+            </a>
+            <a href="http://www.linkedin.com/in/tylerhendrickson28" target="_blank">
+                <div id="linkedin" class="social">
+                    <img src="../img/social/LinkedIn.png" alt="LinkedIn icon">
+                </div>
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

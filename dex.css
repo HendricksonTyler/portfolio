@@ -1,0 +1,644 @@
+/* resets */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* fonts */
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 300;
+    color: dimgray;
+}
+
+body{
+    background-color: #DCE2E5;
+}
+
+a{
+    text-decoration: none;
+}
+
+a h3{
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+
+.type{
+    position: relative;
+    border: solid 2px black;
+    width: 60px;
+    height: 22px;
+    border-radius: 45px;
+    text-align: center;
+}
+
+.type p{
+    line-height: 22px;
+    width: 100%;
+    color: white;
+}
+
+.bug{
+    border-color: #8e9d3a;
+    background-color: #ACBD46;
+}
+
+.dark{
+    border-color: #4e3b32;
+    background-color: #755A4C;
+}
+
+.dragon{
+    border-color: #504584;
+    background-color: #6E5FB0;
+}
+
+.electric{
+    border-color: #d4a345;;
+    background-color: #FFC452;
+}
+
+.fairy{
+    border-color: #d49ace;
+    background-color: #FAB6F2;
+}
+
+.fighting{
+    border-color: #803c2d;
+    background-color: #A8513D;
+}
+
+.fire{
+    border-color: #E9401B;
+    background-color: #FC4F3A;
+}
+
+.fire:hover {
+    background-color: #E9401B;
+    animation-name: fire;
+    animation-duration: .25s;
+}
+
+.flying{
+    border-color: #8495d1;
+    background-color: #9BAEF1;
+}
+
+.ghost{
+    border-color: #494b87;
+    background-color: #6365AF;
+}
+
+.grass{
+    border-color: #78A848;
+    background-color: #7AC657;
+}
+
+.grass:hover {
+    background-color: #78A848;
+}
+
+.ground{
+    border-color: #ad9153;
+    background-color: #D7B468;
+}
+
+.ice{
+    border-color: #45bcd0;
+    background-color: #4ECFE4;
+}
+
+.normal{
+    border-color: #8e887b;
+    background-color: #ADA596;
+}
+
+.poison{
+    border-color: #571F6A;
+    background-color: #76318E;
+}
+
+.psychic{
+    border-color: #de638f;
+    background-color: #FF72A3;
+}
+
+.rock{
+    border-color: #9f8a54;
+    background-color: #BEA464;
+}
+
+.steel{
+    border-color: #8f8fa3;
+    background-color: #ADADC4;
+}
+
+.water{
+    border-color: #227ec8;
+    background-color: #2E9EF8;
+}
+
+/* List */
+.list-row{
+    float: left;
+    width: 100%;
+    height: 40px;
+    border-top: solid 1px #F8F8F8;
+    background-color: white;
+}
+
+.list-row:hover{
+    cursor: hand;
+    background-color: #F8F8F8;
+    animation-name: light-hover;
+    animation-duration: .25s;
+}
+
+.list-row:hover img{
+    animation-name: bounce;
+    animation-iteration-count: 1000;
+    animation-duration: .25s;
+}
+
+.list-num{
+    float: left;
+    line-height: 40px;
+    width: 10%;
+    height: inherit;
+    text-align: center;
+}
+
+.list-sprite-container{
+    float: left;
+    width: 15%;
+    height: inherit;
+}
+
+.list-name{
+    float: left;
+    line-height: 40px;
+    width: 35%;
+    height: inherit;
+    text-align: center;
+    font-weight: bold;
+}
+
+.list-type-container{
+    float: left;
+    height: inherit;
+    width: 20%;
+}
+
+.list-type-container .type{
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.list-stat-container{
+    float: left;
+    height: inherit;
+    visibility: hidden;
+}
+
+/* Pokemon */
+.sprite-section{
+    position: relative;
+    width: 100%;
+    height: 180px;
+
+    background: rgb(40,52,59); /* Old browsers */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzI4MzQzYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY0JSIgc3RvcC1jb2xvcj0iIzgyOGM5NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiNWJkYzgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(40,52,59,1) 0%, rgba(130,140,149,1) 64%, rgba(181,189,200,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(40,52,59,1) 0%,rgba(130,140,149,1) 64%,rgba(181,189,200,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(40,52,59,1) 0%,rgba(130,140,149,1) 64%,rgba(181,189,200,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28343b', endColorstr='#b5bdc8',GradientType=0 ); /* IE6-8 */
+}
+
+.alternate-colors{
+    float: left;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 5px;
+}
+
+#normal-sprite{
+    left: 0;
+}
+
+#shiny-sprite{
+    right: 0;
+}
+
+.dex-section{
+    float: left;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 5px;
+    border-top: solid 1px #8EA4AE;
+    border-bottom: solid 1px #8EA4AE;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.dex-section h2, h3{
+    text-align: center;
+}
+
+.pokemon-type-container{
+    float: left;
+    width: 50%;
+    height: inherit;
+}
+
+.pokemon-type-container .type{
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.dex-icon{
+    height: 30px;
+}
+
+.dex-icon-container{
+    float: left;
+    width: 20%;
+    height: 50px;
+    margin-top: 5px;
+}
+
+.dex-icon-container p{
+    margin-top: 2px;
+    text-align: center;
+}
+
+.dex-size-container{
+    float: left;
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dex-size-container p{
+    text-align: center;
+    margin-top: 2px;
+}
+
+.dex-fbar{
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    width: 90%;
+    height: 8px;
+    border-radius: 45px;
+    background-color: #F289AE;
+}
+
+.dex-mbar{
+    height: inherit;
+    width: 87.5%;
+    border-radius: 45px;
+    background-color: dodgerblue;
+}
+
+.gender-ratio{
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 20px;
+}
+
+.male{
+    color: dodgerblue;
+    float: left;
+}
+
+.female{
+    color: #F289AE;
+    float: right;
+}
+
+.misc-info{
+    float: left;
+    width: 50%;
+    height: 100px;
+}
+
+.misc-info a{
+    color: dodgerblue;
+}
+
+.dex-game{
+    height: 40px;
+}
+
+.location-container{
+    float: left;
+    width: 50%;
+    height: 80px;
+}
+
+#abilities p{
+    margin: 8px;
+}
+
+.hidden-icon{
+    display: inline-block;
+    height: 20px;
+}
+
+.stat-row{
+    width: 100%;
+    height: 30px;
+}
+
+.stat-row p{
+    line-height: 30px;
+    text-align: right;
+}
+
+.stat-name{
+    float: left;
+    width: 20%;
+}
+
+.stat-num{
+    float: left;
+    width: 15%;
+}
+
+.stat-num p{
+    margin-right: 8px;
+}
+
+.stat-bar-container{
+    float: left;
+    width: 60%;
+    background-color: #F8F8F8;
+}
+
+.stat-bar{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5ad6fc+0,1e90ff+100 */
+    background: #5ad6fc; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVhZDZmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxZTkwZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #5ad6fc 0%, #1e90ff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #5ad6fc 0%,#1e90ff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #5ad6fc 0%,#1e90ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ad6fc', endColorstr='#1e90ff',GradientType=0 ); /* IE6-8 */
+
+
+    height: 30px;
+    width: 50%;
+}
+
+#hp-bar{
+    width: 18%;
+}
+
+#atk-bar{
+    width: 20%;
+}
+
+#def-bar{
+    width: 20%;
+}
+
+#spatk-bar{
+    width: 27%;
+}
+
+#spdef-bar{
+    width: 27%;
+}
+
+#speed-bar{
+    width: 18%;
+}
+
+.stat-range-row{
+    float: left;
+    height: inherit;
+    width: 100%;
+}
+
+
+.stat-range {
+    float: left;
+    width: 30%;
+    background-color: #F8F8F8;
+}
+
+.stat-range p{
+    text-align: center;
+}
+
+.dex-move{
+    padding: 5px;
+    border-top: solid 1px #DCE2E5;
+    background-color: #F8F8F8;
+}
+
+.dex-move:hover{
+    animation-name: dark-hover;
+    animation-duration: .25s;
+    background-color: #EEEEEE;
+    cursor: hand;
+}
+
+.dex-move-info{
+    width: 100%;
+    height: 26px;
+}
+
+.dex-move-info *{
+    float: left;
+}
+
+.dex-move-info p{
+    line-height: 24px;
+}
+
+.move-tm-level{
+    width: 10%;
+}
+
+.move-name{
+    width: 30%;
+    font-weight: bold;
+    color: #2E9EF8;
+}
+
+.dex-move-type-container{
+    width: 20%;
+}
+
+.dex-move-category-container{
+    width: 20%;
+}
+
+.dex-move-category-container img{
+    height: 26px;
+}
+
+.move-power{
+    width: 10%;
+}
+
+.move-acc{
+    width: 10%;
+}
+
+.dex-move-description{
+    width: 100%;
+    height: 68px;
+    padding-top: 8px;
+}
+
+.dex-move-description p{
+    text-align: left;
+    line-height: 20px;
+}
+
+
+/* Reusable classes */
+.pixels{
+    image-rendering: -moz-crisp-edges;         /* Firefox */
+    image-rendering:   -o-crisp-edges;         /* Opera */
+    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
+
+.no-select-drag{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -ms-user-select: none;
+}
+
+.center-img{
+    margin: auto;
+    display: block;
+}
+
+.clear{
+    background-color: transparent;
+}
+
+/* Media Queries */
+
+@media (min-width: 640px){ /* Horizontal phone or larger */
+    .misc-info{
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 1024px){ /* Horizontal tablet or larger */
+    .list-num{
+        width: 7%;
+    }
+
+    .list-sprite-container{
+        width: 5%;
+    }
+
+    .list-name{
+        width: 18%;
+    }
+
+    .list-type-container{
+        width: 10%;
+    }
+
+    .list-stat-container{
+        width: 50%;
+        height: inherit;
+        visibility: visible;
+
+    }
+
+    .stat-box{
+        visibility: visible;
+        float: left;
+        height: inherit;
+        width: 16.66%;
+    }
+
+    .stat-box p{
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .stat-box b{
+        font-size: .5em;
+        font-weight: 400;
+    }
+
+
+    .misc-info{
+        width: 25%;
+    }
+
+    .location-container{
+        width: 25%;
+    }
+
+    .stat-container{
+        float: left;
+        width: 50%;
+    }
+
+    .stat-name{
+        width: 20%;
+    }
+
+    .stat-num{
+        width: 10%;
+    }
+
+    .stat-bar-container{
+        width: 70%;
+    }
+
+    .stat
+}
+
+
+
+/* Animations */
+@keyframes bounce{
+    0% {margin-top: 0;}
+    50% {margin-top: -4px;}
+    100% {margin-top: 0;}
+}
+
+@-webkit-keyframes bounce {
+    0% {margin-top: 0;}
+    50% {margin-top: -4px;}
+    100% {margin-top: 0;}
+}
+
+@keyframes light-hover{
+    0% {background-color: white;}
+    100% {background-color: #F8F8F8;}
+}
+
+@keyframes dark-hover{
+    0% {background-color: #F8F8F8;}
+    100% {background-color: #EEEEEE;}
+}
+
+@keyframes fire{
+    0% {background-color: #FC4F3A;}
+    100% {background-color: #E9401B;}
+}
+
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+    <title>Tyler Hendrickson - Contact Me</title>
+
+    <!-- Favicon & Web App-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=qAAPlkYKgJ">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png?v=qAAPlkYKgJ" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png?v=qAAPlkYKgJ" sizes="16x16">
+    <link rel="manifest" href="/manifest.json?v=qAAPlkYKgJ">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=qAAPlkYKgJ">
+    <link rel="shortcut icon" href="/favicon.ico?v=qAAPlkYKgJ">
+    <meta name="apple-mobile-web-app-title" content="Tyler H">
+    <meta name="application-name" content="Tyler H">
+    <meta name="theme-color" content="#406676">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500' rel='stylesheet' type='text/css'>
+
+    <!-- Scripts -->
+    <script rel="script" src="form-validation.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="limit-width-small">
+            <a href="index.html" class="nav-page">HOME</a>
+            <a href="about.html" class="nav-page">ABOUT</a>
+            <a href="index.html" class="nav-icon"><img src="img/Logo.png" class="crisp" alt="Tyler Hendrickson logo"></a>
+            <a href="work.html" class="nav-page">WORK</a>
+            <a href="contact.html" class="nav-page nav-active">CONTACT</a>
+        </div>
+    </nav>
+    <main>
+        <div id="contact-intro" class="section top-section text-section">
+            <div class="limit-width-small">
+                <h1>Contact Me</h1>
+                <p>Shoot me a line by filling out the form below.</p>
+
+                <form name="form" action="mail-handler.php" onsubmit="return validateForm()" method="post">
+                    <label for="name">Your name</label>
+                    <input id="name" name="name" type="text" onblur="checkForEmpty(this)" required>
+                    <label for="email">Your email</label>
+                    <input id="email" name="email" type="email" onblur="checkForEmpty(this)" required>
+                    <label for="type">Type of Inquiry</label>
+                    <select id="type" name="type" size="1" onblur="checkForEmpty(this)" required>
+                        <option value="" selected="selected">- Select an option -</option>
+                        <option value="Employment">Employment</option>
+                        <option value="Project Request">Project Request</option>
+                        <option value="Question">Question</option>
+                        <option value="Feedback">Feedback</option>
+                    </select>
+
+                    <label for="message">Your message</label>
+                    <textarea id="message" name="message" onblur="checkForEmpty(this)" required></textarea>
+
+                    <button type="submit" name="submit" class="button">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="contact-social" class="section bottom-section">
+            <div class="limit-width">
+                <h2>Social</h2>
+                <p>Don't feel like contacting me directly, but want to stay in touch? Feel free to follow me on social media and see what I'm up to.</p>
+
+                <a href="http://www.facebook.com/tylerhendrickson28" target="_blank">
+                    <div class="social-option">
+                        <img src="img/social/Facebook.png" alt="Facebook icon" class="facebook">
+                        <p>Follow me on Facebook</p>
+                    </div>
+                </a>
+                <a href="http://www.twitter.com/thendrixon" target="_blank">
+                    <div class="social-option">
+                        <img src="img/social/Twitter.png" alt="Twitter icon" class="twitter">
+                        <p>Follow me on Twitter</p>
+                    </div>
+                </a>
+                <a href="http://www.linkedin.com/in/tylerhendrickson28" target="_blank">
+                    <div class="social-option">
+                        <img src="img/social/LinkedIn.png" alt="LinkedIn icon" class="linkedin">
+                        <p>Connect on LinkedIn</p>
+                    </div>
+                </a>
+                <a href="https://github.com/THendriXon" target="_blank">
+                    <div class="social-option">
+                        <img src="img/social/GitHub.png" alt="GitHub icon" class="github">
+                        <p>Check me out on GitHub</p>
+                    </div>
+                </a>
+                <a href="https://dribbble.com/TylerHendrickson" target="_blank">
+                    <div class="social-option">
+                        <img src="img/social/Dribbble.png" alt="Dribbble icon" class="dribbble">
+                        <p>Follow me on Dribbble</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="limit-width">
+            <div id="footer-copyright">
+                <p><b>&copy; 2016 Tyler Hendrickson</b> <em>| This website was coded from scratch using HTML, CSS, PHP, and JavaScript.</em></p>
+            </div>
+            <div id="footer-social">
+                <a href="http://www.facebook.com/tylerhendrickson28" target="_blank">
+                    <div id="facebook" class="social">
+                        <img src="img/social/Facebook.png" alt="Facebook icon">
+                    </div>
+                </a>
+                <a href="http://www.twitter.com/thendrixon" target="_blank">
+                    <div id="twitter" class="social">
+                        <img src="img/social/Twitter.png" alt="Twitter icon">
+                    </div>
+                </a>
+                <a href="http://www.linkedin.com/in/tylerhendrickson28" target="_blank">
+                    <div id="linkedin" class="social">
+                        <img src="img/social/LinkedIn.png" alt="LinkedIn icon">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

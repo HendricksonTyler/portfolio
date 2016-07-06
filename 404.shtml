@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+    <title>404 - Page Not Found</title>
+
+    <!-- Favicon & Web App-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=qAAPlkYKgJ">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png?v=qAAPlkYKgJ" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png?v=qAAPlkYKgJ" sizes="16x16">
+    <link rel="manifest" href="/manifest.json?v=qAAPlkYKgJ">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=qAAPlkYKgJ">
+    <link rel="shortcut icon" href="/favicon.ico?v=qAAPlkYKgJ">
+    <meta name="apple-mobile-web-app-title" content="Tyler H">
+    <meta name="application-name" content="Tyler H">
+    <meta name="theme-color" content="#406676">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+<main>
+    <div class="section top-section bottom-section success-box">
+        <div class="success-text">
+            <h1>404</h1>
+            <h2>Page Not Found</h2>
+
+            <p><br><br>Oops... We couldn't seem to find that page. Go back or return to the <a href="index.html">home page</a> to try again.</p>
+        </div>
+    </div>
+</main>
+</body>
+</html>
