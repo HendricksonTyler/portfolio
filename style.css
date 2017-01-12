@@ -231,6 +231,10 @@ nav a {
     background-image: url("img/backgrounds/TylerBackground.jpg");
 }
 
+#home-intro p {
+    text-shadow: 0 0 10px black;
+}
+
 #intro-button {
     padding-top: 75px;
 }
@@ -280,13 +284,9 @@ nav a {
 
 
 /* Contact page */
-#contact-intro {
-    background-image: url("img/backgrounds/Mountain.jpg");
-}
 
-#contact-social {
-    background: url("img/backgrounds/Mountain.jpg");
-}
+
+
 
 
 /* Footer */
@@ -371,7 +371,7 @@ footer em{
 }
 
 .top-section {
-    padding-top: 60px;
+    padding-top: 70px;
 }
 
 .bottom-section {
