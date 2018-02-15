@@ -62,7 +62,7 @@ p a:hover {
 
 a {
     color: white;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 11pt;
     text-decoration: none;
 }
@@ -187,7 +187,7 @@ nav {
 }
 
 nav a {
-    font-size: 9pt;
+    font-size: 10pt;
 }
 
 .nav-icon {
@@ -210,18 +210,15 @@ nav a {
     width: 20%;
     display: block;
     line-height: 60px;
-    opacity: .75;
+    color: darkgray;
 }
 
 .nav-page:hover {
-    animation: fade;
-    animation-duration: .25s;
-    opacity: .99;
     border-bottom: solid 1px white;
 }
 
 .nav-active {
-    opacity: 1;
+    color: white;
 }
 
 
