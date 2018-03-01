@@ -1,4 +1,4 @@
-/* Resets */
+/* Initializing */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@
 
 
 /* Fonts & Text */
-h1, h2, h3, h4, h5, p, a, li, button, input, label, textarea{
+h1, h2, h3, h4, h5, p, a, li, button, input, label, textarea {
     font-family: 'Roboto Light', 'Roboto', sans-serif;
     text-align: center;
     color: white;
@@ -276,16 +276,6 @@ nav a {
 }
 
 
-/* Work page */
-
-
-
-/* Contact page */
-
-
-
-
-
 /* Footer */
 footer {
     position: relative;
@@ -298,7 +288,7 @@ footer {
     background-color: rgba(0,0,0,.60);
 }
 
-footer em{
+footer em {
     display: none;
 }
 
@@ -319,19 +309,19 @@ footer em{
     height: 60px;
 }
 
-#facebook:hover img{
+#facebook:hover img {
     animation-name: facebook-fade;
     animation-duration: .5s;
     background-color: rgba(59,89,152,1);
 }
 
-#twitter:hover img{
+#twitter:hover img {
     animation-name: twitter-fade;
     animation-duration: .5s;
     background-color: rgba(85,172,238,1);
 }
 
-#linkedin:hover img{
+#linkedin:hover img {
     animation-name: linkedin-fade;
     animation-duration: .5s;
     background-color: rgba(0,119,181,1);
@@ -359,7 +349,7 @@ footer em{
 }
 
 
-/* Resuable */
+/* Reusable */
 .section {
     margin: auto;
     padding: 10px;
@@ -376,11 +366,11 @@ footer em{
     overflow: auto;
 }
 
-.text-section *{
+.text-section * {
     text-align: left;
 }
 
-.text-section input{
+.text-section input {
     text-align: center;
 }
 
@@ -461,7 +451,7 @@ footer em{
     opacity: .9;
 }
 
-.work-icon img{
+.work-icon img {
     width: 100%;
     border-radius: 2px;
 }
@@ -508,16 +498,12 @@ footer em{
     background-color: rgba(0,0,0,1);
 }
 
-.dribbble {
-    background-color: #ea4c89;
-}
-
 .split-container {
     margin-bottom: -10px;
     width: 100%;
 }
 
-.split-container img{
+.split-container img {
     margin-bottom: -14px;
     width: 100%;
 }
@@ -550,7 +536,7 @@ footer em{
     background: white;
 }
 
-.white-section *{
+.white-section * {
     color: #406676;
 }
 
@@ -575,7 +561,7 @@ footer em{
     height: 110px;
 }
 
-.social-option:hover img{
+.social-option:hover img {
     animation-name: float-up;
     animation-duration: .5s;
     margin-top: -2px;
@@ -701,7 +687,7 @@ footer em{
         height: 40px;
     }
 
-    #footer-copyright p{
+    #footer-copyright p {
         margin: 0 20px;
         text-align: left;
         line-height: 60px;
@@ -752,5 +738,4 @@ footer em{
     .social-option {
         width: 25%;
     }
-
 }
