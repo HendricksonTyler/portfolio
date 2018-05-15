@@ -236,7 +236,7 @@ nav a {
     padding-top: 75px;
 }
 
-#home-work {
+#home-projects {
     overflow: auto;
     background-image: url("img/backgrounds/Rocky.jpg");
 }
@@ -425,18 +425,18 @@ footer em {
     -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }
 
-.work-icon-area {
+.project-icon-area {
     display: block;
     height: auto;
 }
 
-.work-icon-area li {
+.project-icon-area li {
     width: 50%;
     float: left;
     padding-bottom: 20px;
 }
 
-.work-icon {
+.project-icon {
     display: block;
     height: auto;
     margin: auto;
@@ -447,16 +447,16 @@ footer em {
     border-radius: 2px;
 }
 
-.work-icon:hover {
+.project-icon:hover {
     opacity: .9;
 }
 
-.work-icon img {
+.project-icon img {
     width: 100%;
     border-radius: 2px;
 }
 
-.work-icon h4, .work-icon p {
+.project-icon h4, .project-icon p {
     text-align: left;
     margin: 5px;
     color: rgb(40,40,40);
@@ -641,7 +641,7 @@ footer em {
 
 /* Media Queries */
 @media (max-width: 320px) { /* Small phone or smaller (iPhone 5s) */
-    .work-icon p {
+    .project-icon p {
         display: none;
     }
 }
@@ -660,7 +660,7 @@ footer em {
         width: 33.33%;
     }
 
-    .work-icon p {
+    .project-icon p {
         display: block;
     }
 }
@@ -701,7 +701,7 @@ footer em {
         width: 25%;
     }
 
-    .work-icon-area li {
+    .project-icon-area li {
         width: 33.33%;
     }
 
