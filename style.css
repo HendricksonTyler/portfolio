@@ -1,3 +1,7 @@
+:root {
+    --text-color: #ccc;
+}
+
 /* Initializing */
 * {
     margin: 0;
@@ -210,7 +214,6 @@ nav a {
     width: 20%;
     display: block;
     line-height: 60px;
-    color: darkgray;
 }
 
 .nav-page:hover {
@@ -218,7 +221,7 @@ nav a {
 }
 
 .nav-active {
-    color: white;
+    opacity: .8;
 }
 
 
